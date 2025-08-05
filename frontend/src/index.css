@@ -1,13 +1,244 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme colors */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Crypto-specific colors - Light theme */
+    --crypto-primary: 210 100% 12%;
+    --crypto-secondary: 215 25% 27%;
+    --crypto-accent: 221.2 83.2% 53.3%;
+    --crypto-success: 142 76% 36%;
+    --crypto-warning: 38 92% 50%;
+    --crypto-danger: 0 84% 60%;
+    --crypto-muted: 210 40% 96%;
+    --crypto-glass: 0 0% 98% / 0.05;
+    --crypto-glass-border: 0 0% 0% / 0.1;
+    
+    /* Risk indicators - Light theme */
+    --risk-low: 142 76% 36%;
+    --risk-medium: 38 92% 50%;
+    --risk-high: 0 84% 60%;
+    
+    /* Phase colors - Light theme */
+    --phase-btc: 25 95% 53%;
+    --phase-eth: 221.2 83.2% 53.3%;
+    --phase-alt: 142 76% 36%;
+    --phase-cash: 0 84% 60%;
+  }
+
+  .dark {
+    /* Dark theme colors */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Crypto-specific colors - Dark theme */
+    --crypto-primary: 210 100% 6%;
+    --crypto-secondary: 215 25% 12%;
+    --crypto-accent: 217.2 91.2% 59.8%;
+    --crypto-success: 142 84% 47%;
+    --crypto-warning: 38 100% 62%;
+    --crypto-danger: 0 100% 67%;
+    --crypto-muted: 217.2 32.6% 17.5%;
+    --crypto-glass: 255 255% 255% / 0.05;
+    --crypto-glass-border: 255 255% 255% / 0.1;
+    
+    /* Risk indicators - Dark theme */
+    --risk-low: 142 84% 47%;
+    --risk-medium: 38 100% 62%;
+    --risk-high: 0 100% 67%;
+    
+    /* Phase colors - Dark theme */
+    --phase-btc: 25 100% 63%;
+    --phase-eth: 217.2 91.2% 59.8%;
+    --phase-alt: 142 84% 47%;
+    --phase-cash: 0 100% 67%;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 32;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent-foreground/20;
+  }
+}
+
+@layer components {
+  /* Glass morphism effects */
+  .glass-effect {
+    background: hsl(var(--crypto-glass));
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--crypto-glass-border));
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+  
+  .glass-card {
+    @apply glass-effect rounded-2xl p-6;
+  }
+  
+  /* Tesla-inspired gradients */
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--crypto-primary)) 0%, hsl(var(--crypto-secondary)) 50%, hsl(var(--crypto-accent)) 100%);
+  }
+  
+  .gradient-success {
+    background: linear-gradient(135deg, hsl(var(--crypto-success)) 0%, hsl(var(--crypto-success)) 100%);
+  }
+  
+  .gradient-warning {
+    background: linear-gradient(135deg, hsl(var(--crypto-warning)) 0%, hsl(var(--crypto-warning)) 100%);
+  }
+  
+  .gradient-danger {
+    background: linear-gradient(135deg, hsl(var(--crypto-danger)) 0%, hsl(var(--crypto-danger)) 100%);
+  }
+  
+  /* Risk indicator styling */
+  .risk-low {
+    color: hsl(var(--risk-low));
+  }
+  
+  .risk-medium {
+    color: hsl(var(--risk-medium));
+  }
+  
+  .risk-high {
+    color: hsl(var(--risk-high));
+  }
+  
+  /* Phase-specific styling */
+  .phase-btc {
+    color: hsl(var(--phase-btc));
+  }
+  
+  .phase-eth {
+    color: hsl(var(--phase-eth));
+  }
+  
+  .phase-alt {
+    color: hsl(var(--phase-alt));
+  }
+  
+  .phase-cash {
+    color: hsl(var(--phase-cash));
+  }
+  
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.2s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

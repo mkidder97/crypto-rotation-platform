@@ -1,0 +1,460 @@
+{
+  "timestamp": "2025-08-04T22:08:57.245Z",
+  "tests": [
+    {
+      "api": "CoinGecko",
+      "endpoint": "global",
+      "url": "https://api.coingecko.com/api/v3/global",
+      "status": "success",
+      "responseTime": 274,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"data\":{\"active_cryptocurrencies\":17915,\"upcoming_icos\":0,\"ongoing_icos\":49,\"ended_icos\":3376,\"markets\":1330,\"total_market_cap\":{\"btc\":33447745.3816859,\"eth\":1035587075.3115741,\"ltc\":32033608208.510246,\"bch\":6899363088.200002,\"bnb\":5025325156.65434,\"eos\":7538373980212.839,\"xrp\":1252977780713.7598,\"xlm\":9293827224302.568,\"link\":225169718399.6758,\"dot\":1033806287856.3148,\"yfi\":719792856.3535819,\"sol\":22846044597.839752,\"usd\":3851603464398.082,\"aed\":14147132104907.383,\"ars\":5228546965448136,\"aud\":5953893370542.772,\"bdt\":469086577942455.44,\"bhd\":1452077615698.8643,\"bmd\":3851603464398.082,\"brl\":21171108762756.95,\"cad\":5306269357625.022,\"chf\":3111510155507.0635,\"clp\":3721442854521042.5,\"cny\":27649698370047.746,\"czk\":81823074985723,\"dkk\":24836171368167.305,\"eur\":3327962566999.307,\"gbp\":2898774541357.9644,\"gel\":10399329353874.826,\"hkd\":30233353973965.98,\"huf\":1328301543124118.5,\"idr\":63045356467346470,\"ils\":13147063265376.422,\"inr\":338167537272431.1,\"jpy\":566267555840136.8,\"krw\":5332857014855...",
+      "dataQuality": {
+        "hasRequiredFields": true,
+        "dataCompleteness": 100,
+        "fieldCount": 10,
+        "issues": []
+      }
+    },
+    {
+      "api": "CoinGecko",
+      "endpoint": "prices",
+      "url": "https://api.coingecko.com/api/v3/simple/price",
+      "status": "success",
+      "responseTime": 118,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"bitcoin\":{\"usd\":115145,\"usd_market_cap\":2291760817818.112,\"usd_24h_change\":0.6530985923730941},\"ethereum\":{\"usd\":3720.2,\"usd_market_cap\":448883085549.111,\"usd_24h_change\":6.244200226988404}}",
+      "dataQuality": {
+        "hasRequiredFields": true,
+        "dataCompleteness": 100,
+        "fieldCount": 2,
+        "issues": []
+      }
+    },
+    {
+      "api": "CoinGecko",
+      "endpoint": "markets",
+      "url": "https://api.coingecko.com/api/v3/coins/markets",
+      "status": "success",
+      "responseTime": 119,
+      "statusCode": 200,
+      "error": null,
+      "data": "[{\"id\":\"bitcoin\",\"symbol\":\"btc\",\"name\":\"Bitcoin\",\"image\":\"https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400\",\"current_price\":115146,\"market_cap\":2291760817818,\"market_cap_rank\":1,\"fully_diluted_valuation\":2291760817818,\"total_volume\":32267770678,\"high_24h\":115591,\"low_24h\":114112,\"price_change_24h\":747.93,\"price_change_percentage_24h\":0.65379,\"market_cap_change_24h\":13628413631,\"market_cap_change_percentage_24h\":0.59823,\"circulating_supply\":19901987,\"total_supply\":19901987,\"max_supply\":21000000,\"ath\":122838,\"ath_change_percentage\":-6.24812,\"ath_date\":\"2025-07-14T07:56:01.937Z\",\"atl\":67.81,\"atl_change_percentage\":169734.26185,\"atl_date\":\"2013-07-06T00:00:00.000Z\",\"roi\":null,\"last_updated\":\"2025-08-04T22:08:15.697Z\"},{\"id\":\"ethereum\",\"symbol\":\"eth\",\"name\":\"Ethereum\",\"image\":\"https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628\",\"current_price\":3720.16,\"market_cap\":448883085549,\"market_cap_rank\":2,\"fully_diluted_valuation\":4488830855...",
+      "dataQuality": {
+        "hasRequiredFields": false,
+        "dataCompleteness": 0,
+        "fieldCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "api": "CoinGecko",
+      "endpoint": "bitcoin_history",
+      "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart",
+      "status": "success",
+      "responseTime": 77,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"prices\":[[1753740260333,118068.65334761185],[1753743734929,117911.75723002375],[1753747366779,118003.30201607826],[1753751407506,117953.89000610284],[1753754736373,117828.39156988336],[1753758471709,118070.38638579378],[1753761830877,118610.72784496703],[1753765753318,118583.480628655],[1753769074688,118771.38800747317],[1753772491533,118857.56364322016],[1753776034826,118932.51750116867],[1753779898540,118866.53867364993],[1753783468135,118788.02259450633],[1753787087755,118296.67075858342],[1753790909942,118472.78453750764],[1753794300059,118905.15267838027],[1753797895099,118560.62047564103],[1753801236173,118118.04426340458],[1753805389250,117428.45655222486],[1753808471679,117686.52229125002],[1753812580099,117718.45053526506],[1753816040107,117575.1419571779],[1753819388384,117567.54860130284],[1753823057091,117342.64541896585],[1753826871401,117533.73703656161],[1753830189583,117803.58616742294],[1753834014868,117830.59603074304],[1753837766483,117716.61382088641],[17538409597...",
+      "dataQuality": {
+        "hasRequiredFields": false,
+        "dataCompleteness": 0,
+        "fieldCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "api": "Binance",
+      "endpoint": "ticker",
+      "url": "https://api.binance.com/api/v3/ticker/price",
+      "status": "failed",
+      "responseTime": 244,
+      "statusCode": 451,
+      "error": {
+        "message": "Request failed with status code 451",
+        "code": "ERR_BAD_REQUEST",
+        "response": "{\"code\":0,\"msg\":\"Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.\"}"
+      },
+      "data": null,
+      "dataQuality": {}
+    },
+    {
+      "api": "Binance",
+      "endpoint": "klines",
+      "url": "https://api.binance.com/api/v3/klines",
+      "status": "failed",
+      "responseTime": 14,
+      "statusCode": 451,
+      "error": {
+        "message": "Request failed with status code 451",
+        "code": "ERR_BAD_REQUEST",
+        "response": "{\"code\":0,\"msg\":\"Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.\"}"
+      },
+      "data": null,
+      "dataQuality": {}
+    },
+    {
+      "api": "Binance",
+      "endpoint": "24hr_ticker",
+      "url": "https://api.binance.com/api/v3/ticker/24hr",
+      "status": "failed",
+      "responseTime": 21,
+      "statusCode": 451,
+      "error": {
+        "message": "Request failed with status code 451",
+        "code": "ERR_BAD_REQUEST",
+        "response": "{\"code\":0,\"msg\":\"Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.\"}"
+      },
+      "data": null,
+      "dataQuality": {}
+    },
+    {
+      "api": "CryptoCompare",
+      "endpoint": "price",
+      "url": "https://min-api.cryptocompare.com/data/price",
+      "status": "success",
+      "responseTime": 1893,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"USD\":115230.86,\"ETH\":30.93}",
+      "dataQuality": {
+        "hasRequiredFields": false,
+        "dataCompleteness": 0,
+        "fieldCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "api": "CryptoCompare",
+      "endpoint": "daily_history",
+      "url": "https://min-api.cryptocompare.com/data/v2/histoday",
+      "status": "success",
+      "responseTime": 275,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"Response\":\"Success\",\"Message\":\"\",\"HasWarning\":false,\"Type\":100,\"RateLimit\":{},\"Data\":{\"Aggregated\":false,\"TimeFrom\":1753660800,\"TimeTo\":1754265600,\"Data\":[{\"time\":1753660800,\"high\":119835.44,\"low\":117403.28,\"open\":119468.71,\"volumefrom\":18092.6,\"volumeto\":2142740462.44,\"close\":118059.92,\"conversionType\":\"direct\",\"conversionSymbol\":\"\"},{\"time\":1753747200,\"high\":119285.96,\"low\":116933.73,\"open\":118059.92,\"volumefrom\":17580.06,\"volumeto\":2073820445.19,\"close\":117942.11,\"conversionType\":\"direct\",\"conversionSymbol\":\"\"},{\"time\":1753833600,\"high\":118800.1,\"low\":115769.47,\"open\":117942.11,\"volumefrom\":18335.33,\"volumeto\":2153325010.48,\"close\":117853.3,\"conversionType\":\"direct\",\"conversionSymbol\":\"\"},{\"time\":1753920000,\"high\":118927.15,\"low\":115493.77,\"open\":117853.3,\"volumefrom\":16934.89,\"volumeto\":1991848800.07,\"close\":115765.36,\"conversionType\":\"direct\",\"conversionSymbol\":\"\"},{\"time\":1754006400,\"high\":116060.68,\"low\":112682.82,\"open\":115765.36,\"volumefrom\":33588.86,\"volumeto\":3851719228.71...",
+      "dataQuality": {
+        "hasRequiredFields": false,
+        "dataCompleteness": 0,
+        "fieldCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "api": "CryptoCompare",
+      "endpoint": "top_coins",
+      "url": "https://min-api.cryptocompare.com/data/top/mktcapfull",
+      "status": "success",
+      "responseTime": 292,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"Message\":\"Success\",\"Type\":100,\"MetaData\":{\"Count\":1245},\"SponsoredData\":[],\"Data\":[{\"CoinInfo\":{\"Id\":\"1182\",\"Name\":\"BTC\",\"FullName\":\"Bitcoin\",\"Internal\":\"BTC\",\"ImageUrl\":\"/media/37746251/btc.png\",\"Url\":\"/coins/btc/overview\",\"Algorithm\":\"SHA-256\",\"ProofType\":\"PoW\",\"Rating\":{\"Weiss\":{\"Rating\":\"B+\",\"TechnologyAdoptionRating\":\"A-\",\"MarketPerformanceRating\":\"D\"}},\"NetHashesPerSecond\":1.137186928401916e+21,\"BlockNumber\":908642,\"BlockTime\":252,\"BlockReward\":3.125,\"AssetLaunchDate\":\"2009-01-03\",\"MaxSupply\":20999999.9769,\"Type\":1,\"DocumentType\":\"Webpagecoinp\"},\"RAW\":{\"USD\":{\"TYPE\":\"5\",\"MARKET\":\"CCCAGG\",\"FROMSYMBOL\":\"BTC\",\"TOSYMBOL\":\"USD\",\"FLAGS\":\"2\",\"LASTMARKET\":\"CCCAGG\",\"MEDIAN\":115230.861780353,\"TOPTIERVOLUME24HOUR\":14178.14464197,\"TOPTIERVOLUME24HOURTO\":1628352568.16775,\"LASTTRADEID\":\"819669071\",\"PRICE\":115230.861780353,\"LASTUPDATE\":1754345331,\"LASTVOLUME\":0.00104,\"LASTVOLUMETO\":119.8318368,\"VOLUMEHOUR\":102.69326109,\"VOLUMEHOURTO\":11828104.6784049,\"OPENHOUR\":115131.255896857,\"HIGHHOUR\":115...",
+      "dataQuality": {
+        "hasRequiredFields": false,
+        "dataCompleteness": 0,
+        "fieldCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "api": "CoinCap",
+      "endpoint": "assets",
+      "url": "https://api.coincap.io/v2/assets",
+      "status": "failed",
+      "responseTime": 721,
+      "statusCode": 404,
+      "error": {
+        "message": "Request failed with status code 404",
+        "code": "ERR_BAD_REQUEST",
+        "response": "\"404 page not found\\n\""
+      },
+      "data": null,
+      "dataQuality": {}
+    },
+    {
+      "api": "CoinCap",
+      "endpoint": "bitcoin",
+      "url": "https://api.coincap.io/v2/assets/bitcoin",
+      "status": "failed",
+      "responseTime": 180,
+      "statusCode": 404,
+      "error": {
+        "message": "Request failed with status code 404",
+        "code": "ERR_BAD_REQUEST",
+        "response": "\"404 page not found\\n\""
+      },
+      "data": null,
+      "dataQuality": {}
+    },
+    {
+      "api": "CoinCap",
+      "endpoint": "bitcoin_history",
+      "url": "https://api.coincap.io/v2/assets/bitcoin/history",
+      "status": "failed",
+      "responseTime": 174,
+      "statusCode": 404,
+      "error": {
+        "message": "Request failed with status code 404",
+        "code": "ERR_BAD_REQUEST",
+        "response": "\"404 page not found\\n\""
+      },
+      "data": null,
+      "dataQuality": {}
+    },
+    {
+      "api": "YahooFinance",
+      "endpoint": "quote",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD",
+      "status": "success",
+      "responseTime": 139,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"chart\":{\"result\":[{\"meta\":{\"currency\":\"USD\",\"symbol\":\"BTC-USD\",\"exchangeName\":\"CCC\",\"fullExchangeName\":\"CCC\",\"instrumentType\":\"CRYPTOCURRENCY\",\"firstTradeDate\":1410912000,\"regularMarketTime\":1754345220,\"hasPrePostMarketData\":false,\"gmtoffset\":0,\"timezone\":\"UTC\",\"exchangeTimezoneName\":\"UTC\",\"regularMarketPrice\":115148.26,\"fiftyTwoWeekHigh\":123091.61,\"fiftyTwoWeekLow\":49121.24,\"regularMarketDayHigh\":115698.125,\"regularMarketDayLow\":114152.195,\"regularMarketVolume\":55596421120,\"longName\":\"Bitcoin USD\",\"shortName\":\"Bitcoin USD\",\"chartPreviousClose\":117922.15,\"priceHint\":2,\"currentTradingPeriod\":{\"pre\":{\"timezone\":\"UTC\",\"start\":1754265600,\"end\":1754265600,\"gmtoffset\":0},\"regular\":{\"timezone\":\"UTC\",\"start\":1754265600,\"end\":1754351940,\"gmtoffset\":0},\"post\":{\"timezone\":\"UTC\",\"start\":1754351940,\"end\":1754351940,\"gmtoffset\":0}},\"dataGranularity\":\"1d\",\"range\":\"7d\",\"validRanges\":[\"1d\",\"5d\",\"1mo\",\"3mo\",\"6mo\",\"1y\",\"2y\",\"5y\",\"10y\",\"ytd\",\"max\"]},\"timestamp\":[1753747200,1753833600,1753920000,17540064...",
+      "dataQuality": {
+        "hasRequiredFields": false,
+        "dataCompleteness": 0,
+        "fieldCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "api": "AlphaVantage",
+      "endpoint": "crypto_daily",
+      "url": "https://www.alphavantage.co/query",
+      "status": "success",
+      "responseTime": 182,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"Error Message\":\"the parameter apikey is invalid or missing. Please claim your free API key on (https://www.alphavantage.co/support/#api-key). It should take less than 20 seconds.\"}",
+      "dataQuality": {
+        "hasRequiredFields": false,
+        "dataCompleteness": 0,
+        "fieldCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "api": "CoinMarketCap",
+      "endpoint": "listings",
+      "url": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
+      "status": "failed",
+      "responseTime": 160,
+      "statusCode": 401,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "response": "{\"status\":{\"timestamp\":\"2025-08-04T22:09:02.117Z\",\"error_code\":1002,\"error_message\":\"API key missing.\",\"elapsed\":0,\"credit_count\":0}}"
+      },
+      "data": null,
+      "dataQuality": {}
+    },
+    {
+      "api": "CoinMarketCap",
+      "endpoint": "global_metrics",
+      "url": "https://api.coinmarketcap.com/data-api/v3/global-metrics/quotes/latest",
+      "status": "success",
+      "responseTime": 199,
+      "statusCode": 200,
+      "error": null,
+      "data": "{\"data\":{\"btcDominance\":60.675356019637,\"ethDominance\":11.892546441055,\"activeCryptoCurrencies\":9470,\"totalCryptoCurrencies\":35510,\"activeMarketPairs\":106443,\"activeExchanges\":837,\"totalExchanges\":10804,\"ethDominanceYesterday\":11.39596476,\"btcDominanceYesterday\":61.39811212,\"ethDominance24hPercentageChange\":0.496581681055,\"btcDominance24hPercentageChange\":-0.722756100363,\"defiVolume24h\":36711796620.35201,\"defiVolume24hReported\":82030945069.679,\"defiMarketCap\":105263630209.69647,\"defi24hPercentageChange\":13.671763034796,\"stablecoinVolume24h\":134019261508.8561,\"stablecoinVolume24hReported\":674780679146.7008,\"stablecoinMarketCap\":250034154642.50665,\"stablecoin24hPercentageChange\":26.311019111521,\"derivativesVolume24h\":1198635545267.1025,\"derivativesVolume24hReported\":1198635545267.1025,\"derivatives24hPercentageChange\":34.111944487909,\"quotes\":[{\"cryptoId\":2781,\"last_updated\":\"2025-08-04T22:04:59.999Z\",\"totalMarketCap\":3777981759671.6636,\"totalVolume24H\":138121953831.57,\"totalVolume24HRepo...",
+      "dataQuality": {
+        "hasRequiredFields": false,
+        "dataCompleteness": 0,
+        "fieldCount": 0,
+        "issues": []
+      }
+    }
+  ],
+  "summary": {
+    "totalAPIs": 7,
+    "workingAPIs": 5,
+    "failedAPIs": 2,
+    "apiDetails": {
+      "CoinGecko": {
+        "total": 4,
+        "successful": 4,
+        "failed": 0,
+        "avgResponseTime": 147,
+        "endpoints": [
+          {
+            "name": "global",
+            "status": "success",
+            "responseTime": 274,
+            "dataQuality": 100
+          },
+          {
+            "name": "prices",
+            "status": "success",
+            "responseTime": 118,
+            "dataQuality": 100
+          },
+          {
+            "name": "markets",
+            "status": "success",
+            "responseTime": 119,
+            "dataQuality": 0
+          },
+          {
+            "name": "bitcoin_history",
+            "status": "success",
+            "responseTime": 77,
+            "dataQuality": 0
+          }
+        ],
+        "successRate": 100
+      },
+      "Binance": {
+        "total": 3,
+        "successful": 0,
+        "failed": 3,
+        "avgResponseTime": 0,
+        "endpoints": [
+          {
+            "name": "ticker",
+            "status": "failed",
+            "responseTime": 244
+          },
+          {
+            "name": "klines",
+            "status": "failed",
+            "responseTime": 14
+          },
+          {
+            "name": "24hr_ticker",
+            "status": "failed",
+            "responseTime": 21
+          }
+        ]
+      },
+      "CryptoCompare": {
+        "total": 3,
+        "successful": 3,
+        "failed": 0,
+        "avgResponseTime": 820,
+        "endpoints": [
+          {
+            "name": "price",
+            "status": "success",
+            "responseTime": 1893,
+            "dataQuality": 0
+          },
+          {
+            "name": "daily_history",
+            "status": "success",
+            "responseTime": 275,
+            "dataQuality": 0
+          },
+          {
+            "name": "top_coins",
+            "status": "success",
+            "responseTime": 292,
+            "dataQuality": 0
+          }
+        ],
+        "successRate": 100
+      },
+      "CoinCap": {
+        "total": 3,
+        "successful": 0,
+        "failed": 3,
+        "avgResponseTime": 0,
+        "endpoints": [
+          {
+            "name": "assets",
+            "status": "failed",
+            "responseTime": 721
+          },
+          {
+            "name": "bitcoin",
+            "status": "failed",
+            "responseTime": 180
+          },
+          {
+            "name": "bitcoin_history",
+            "status": "failed",
+            "responseTime": 174
+          }
+        ]
+      },
+      "YahooFinance": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "avgResponseTime": 139,
+        "endpoints": [
+          {
+            "name": "quote",
+            "status": "success",
+            "responseTime": 139,
+            "dataQuality": 0
+          }
+        ],
+        "successRate": 100
+      },
+      "AlphaVantage": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "avgResponseTime": 182,
+        "endpoints": [
+          {
+            "name": "crypto_daily",
+            "status": "success",
+            "responseTime": 182,
+            "dataQuality": 0
+          }
+        ],
+        "successRate": 100
+      },
+      "CoinMarketCap": {
+        "total": 2,
+        "successful": 1,
+        "failed": 1,
+        "avgResponseTime": 199,
+        "endpoints": [
+          {
+            "name": "listings",
+            "status": "failed",
+            "responseTime": 160
+          },
+          {
+            "name": "global_metrics",
+            "status": "success",
+            "responseTime": 199,
+            "dataQuality": 0
+          }
+        ],
+        "successRate": 50
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "type": "success",
+      "message": "Found 5 working API(s)",
+      "action": "Use these APIs as primary data sources: YahooFinance, CoinGecko, AlphaVantage, CryptoCompare, CoinMarketCap"
+    },
+    {
+      "type": "primary",
+      "message": "Use YahooFinance as primary API",
+      "action": "YahooFinance has 100.0% success rate with 139ms average response time"
+    },
+    {
+      "type": "backup",
+      "message": "Implement fallback chain",
+      "action": "Use CoinGecko, AlphaVantage, CryptoCompare, CoinMarketCap as backup sources"
+    },
+    {
+      "type": "rate_limit",
+      "message": "CoinGecko rate limiting",
+      "action": "Use 3-5 second delays between requests to avoid 429 errors"
+    },
+    {
+      "type": "warning",
+      "message": "Binance API blocked",
+      "action": "Geographic restrictions detected. Avoid Binance API or use VPN"
+    }
+  ]
+}
