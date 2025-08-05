@@ -19,6 +19,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import CryptoTradingDashboard from '@/components/crypto/CryptoTradingDashboard'
+import BenjaminCowenAnalysis from '@/components/crypto/BenjaminCowenAnalysis'
 
 const ModernDashboard: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true)
@@ -242,12 +243,7 @@ const ModernDashboard: React.FC = () => {
                   <p className="text-muted-foreground">Market overview features coming soon...</p>
                 </Card>
               )}
-              {activeSection === 'analysis' && (
-                <Card variant="glass" className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">Benjamin Cowen Analysis</h3>
-                  <p className="text-muted-foreground">Advanced analysis features coming soon...</p>
-                </Card>
-              )}
+              {activeSection === 'analysis' && <BenjaminCowenAnalysis />}
               {activeSection === 'global' && (
                 <Card variant="glass" className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-4">Global Market Data</h3>
